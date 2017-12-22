@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>China</title>
+  {% load staticfiles %}
+  <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}"/>
+  <link rel="stylesheet" type"text/css" href="{% static 'css/myStyle.css'%}"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+  <!--Start Navbar-->
+  <nav class="navbar navbar-inverse";>
+    <div class ="container-fluid">
+      <div class ="navbar-header">
+        <button type="button" class="navbar-toggle"  data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html"> <img src="{% static 'img/MrChef.png' %}" id="LeChef" ></a>
+        <a class="navbar-brand" href="index.html"> <img src="{% static 'img/DiningGlobally.png' %}" id="DiningGlobally" ></a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Recipes.html">Recipes</a></li>
+          <li><a href="/admin">Admin Login</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="Help.html">Help</a></li>
+          <li><a href="China.html">Cuisines</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--End Navbar-->
+  <!--Start Carousel Slider -->
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+      <li data-target="#myCarousel" data-slide-to="4"></li>
+      <li data-target="#myCarousel" data-slide-to="5"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+        <!-- Start Active -->
+        <div class="item active">
+          <img src="{% static 'img/ChineseFood.jpeg'%}">
+          <div class="carousel-caption">
+            <a href="China.html#anchor1" type="button" class="btn btn-default">Chinese Cuisine</a>
+          </div>
+        </div>
+        <!-- End Active -->
+        <div class="item">
+          <img src="{% static 'img/TaiwanFood.jpeg'%}">
+          <div class="carousel-caption">
+            <a href="Thai.html#anchor2" type="button" class="btn btn-default">Thai Cuisine</a>
+          </div>
+        </div>
+        <div class="item">
+          <img src="{% static 'img/DutchFood.jpeg'%}">
+          <div class="carousel-caption">
+            <a href="Dutch.html#anchor3" type="button" class="btn btn-default">Dutch Cuisine</a>
+          </div>
+        </div>
+        <div class="item">
+          <img src="{% static 'img/JapanFood.jpeg'%}">
+          <div class="carousel-caption">
+            <a href="Japanese.html#anchor4" type="button" class="btn btn-default">Japanese Cuisine</a>
+          </div>
+        </div>
+        <div class="item">
+          <img src="{% static 'img/ItalianFood.jpeg'%}">
+          <div class="carousel-caption">
+            <a href="Italian.html#anchor5" type="button" class="btn btn-default">Italian Cuisine</a>
+          </div>
+        </div>
+        <div class="item">
+          <img src="{% static 'img/MexicanFood.jpeg'%}">
+          <div class="carousel-caption">
+            <a href="Mexican.html#anchor6" type="button" class="btn btn-default">Mexican Cuisine</a>
+          </div>
+        </div>
+    </div>
+    <!-- Start Carousel Slide control panel-->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  <!-- End Carousel Slide control panel-->
+  <!-- End Carousel SLider -->
+  <!-- Start Body -->
+  <div class="container text-center">
+    <div class="page-header" id="anchor1">
+      <h2>Welcome to China!</h2>
+      <div class="row">
+        <div class="col-sm-4">
+          <img src="{% static 'img/ChinaDuck.jpeg'%}" id="icon">
+          <h4>Roasted Duck</h4>
+        </div>
+        <div class="col-sm-4">
+          <img src="{% static 'img/ChinaRestaurant.jpeg'%}" id="icon">
+          <h4>Quanjude Restaurant</h4>
+        </div>
+        <div class="col-sm-4">
+          <img src="{% static 'img/ChinaPork.jpeg'%}" id="icon">
+          <h4>Sweet & Sour Pork</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row" id="myRestaurant">
+      <div class="col-md-6">
+        <h4>Quanjude Branch Restaurant</h4>
+        <p>Quanjude Roast Duck Restaurant was founded in 1864.
+          It has a history of 149 years.
+          As an old and famous roast duck restaurant, Quanjude
+          Roast Duck is almost the synonym of Beijing Roast Duck.
+          Through continuous innovation and development,
+          Quanjude has formed distinctive cuisines with
+          roast duck as its leading dish, including a
+          "whole duck banquet" and more than 400 specialties.
+          Known as "the first dish to taste in China", Quanjude
+          Roast Duck is highly praised by heads of state,
+          government officials, communities, and domestic and
+          foreign tourists. Former Premier Zhou Enlai used to choose
+          the "whole duck banquet" of Quanjude as a state banquet.</p>
+      </div>
+      <div class="col-md-6">
+        <img src="{% static 'img/ChinaKitchen.jpeg'%}" class="img-responsive">
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+          <h4>Peking Roasted Duck</h4>
+          <p>First, make a small hole in the duck and remove
+            the viscera. Next, put boiling water into the duck and tie up
+            the hole. Then hang the duck in the oven. By doing this,
+            water can be kept in the duck after being roasted. At the same
+            time, since the duck’s belly is full of water, the duck’s skin
+            bulges and won’t go soft when cooked; instead, the skin becomes
+            very thin and crispy. So, the most delicious part of the duck is
+            the skin.</p>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+        <img src="{% static 'img/ChinaDuck.jpeg'%}" class="img-responsive">
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+        <h4>Sweet & Sour Pork</h4>
+        <p>Sweet and Sour Pork, the ubiquitous and arguably the
+           most well-known Chinese recipe in the world, is a classic
+           Cantonese dish. Called “咕嚕肉” or “goo lou yok” in Cantonese
+           dialect, sweet and sour pork is very pleasing to the palate
+           because of the flavorsome sweet and sour sauce—the sweetness
+           from sugar plus the tangy ketchup and sharp rice vinegar—with the
+           crispy fried pork pieces. (You can check out my sweet and sour
+           chicken recipe.) The green and red bell peppers and pineapple
+           pieces are just icing on the cake.</p>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+          <img src="{% static 'img/ChinaPork.jpeg'%}" class="img-responsive">
+      </div>
+    </div>
+    <div class="container">
+      <div class="row" >
+        <h4><a href="#hidden" data-toggle="collapse">Care to learn about Chinese culture? </a></h4>
+        <div id="hidden" class="collapse">
+          <h4>Language</h4>
+          <p>There are seven major groups of dialects of
+             the Chinese language, which each have their own
+             variations, according to Mount Holyoke College. Mandarin
+             dialects are spoken by 71.5 percent of the population,
+             followed by Wu (8.5 percent), Yue (also called Cantonese;
+             5 percent), Xiang (4.8 percent), Min (4.1 percent),
+             Hakka (3.7 percent) and Gan (2.4 percent).</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Body -->
+  <br>
+  <br>
+  <footer class="container-fluid text-center">
+    <div class="row">
+      <!--<div class="col-sm-4">
+        <br>
+      </div>-->
+      <div class="col-sm-6">
+        <br>
+        <h3>Social Media</h3>
+        <br>
+        <a href="https://www.facebook.com" target="_blank" class="fa fa-facebook fa-2x"></a>
+        <a href="https://www.twitter.com" target="_blank" class="fa fa-twitter fa-2x"></a>
+        <a href="https://www.google.com" target="_blank" class="fa fa-google fa-2x"></a>
+        <a href="https://www.linkedin.com" target="_blank" class="fa fa-linkedin fa-2x"></a>
+        <a  href="https://www.youtube.com" target="_blank" class="fa fa-youtube fa-2x"></a>
+      </div>
+      <div class="col-sm-6">
+        <img src="{% static 'img/meal.png'%}">
+
+      </div>
+    </div>
+  </footer>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="{% static 'js/bootstrap.min.js' %}"></script>
+</body>
+</html>

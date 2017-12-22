@@ -1,0 +1,220 @@
+/* START BODY */
+
+body {
+  background-color: #E7FCFF;
+  max-height: 1500;
+}
+
+h1, h2, h3, h4{
+  font-weight: 600;
+}
+
+#myRestaurant {
+  text-align: center;
+}
+
+#Comment {
+  text-align: center;
+}
+
+/* END BODY */
+/* START NAVBAR */
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+  background-color: #1A3D64;
+  color: #FFF;
+  padding: 1% 0;
+  font-size: 1.2em;
+  border: 0;
+}s
+
+.navbar .navbar-right {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.navbar .navbar-toggle {
+  padding: 10px;
+}
+
+.navbar-brand {
+  float: left;
+  max-width: 200%;
+}
+
+
+.navbar-inverse .navbar-nav li a{
+  color: #D5D5D5;
+}
+
+.navbar h3 {
+  position: absolute;
+  top: -5px;
+  padding-bottom: 5px;
+}
+
+.navbar-right li a{
+  font-weight: 600;
+}
+/*END NAVBAR */
+/* START CAROUSEL SLIDER */
+.carousel-caption h1 {
+  text-transform: uppercase;
+  text-shadow: 2px 2px #000;
+  font-size: 45px;
+}
+
+.carousel-caption {
+  top: 60%;
+  transform: translateY(-50%);
+  font-weight: bold;
+}
+
+.btn {
+  font-size: 40px;
+  color: #FFF;
+  background: #1A3D64;
+  padding: 12px 22px;
+  border: 2px solid #0F2D4E;
+}
+/* END CAROUSEL SLIDER */
+/* START EVERYTHING PICTURE RELAYED */
+a:link .fa, a:visited .fa   {
+    color: white;
+    text-decoration: none;
+}
+.fa:hover, .fa:focus {
+    color: white;
+    border: none;
+    text-decoration: none;
+}
+
+.fa{
+  padding: 12px;
+  color: white;
+}
+
+.fa:hover {
+  color: #D5D5D5;
+  text-decoration: none;
+}
+
+#icon {
+  max-width: 200px;
+  margin: 1% auto;
+}
+
+#LeChef {
+  width: 3.7%;
+  max-width: 53px;
+  min-width: 35px;
+  height: auto;
+  position: absolute;
+  top: 5px;
+  left: 10px;
+}
+
+#DiningGlobally {
+  width: 33%;
+  max-width: 420px;
+  min-width: 250px;
+  height: auto;
+  position: absolute;
+  top: 10px;
+  left: 6%;
+}
+
+.img-responsive {
+  padding: 5%;
+  width: 200%;
+  height: auto;
+}
+
+
+/* END EVERYTHING PICTURE RELAYED */
+/* START FOOTER */
+footer {
+  width: 100%;
+  background-color: #1A3D64;
+  padding: 1%;
+  color: white;
+}
+
+footer img{
+  width: 45%;
+  max-width: 225px;
+}
+/* END FOOTER */
+/* START MEDIA */
+@media (max-width: 900px) {
+  .carousel-caption h1 {
+      display: none;
+    }
+   #DiningGlobally {
+      display: none;
+    }
+
+
+}
+
+@media (max-width: 1500px) {
+  .carousel-caption h1 {
+      font-size: 38px;
+    }
+
+  .btn {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .carousel-caption h1 {
+      font-size: 29px;
+    }
+  .btn {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 768px) { /* Small devices and below */
+  .carousel-indicators {
+    display: none;
+  }
+  .row h4{
+    text-align: center;
+  }
+  .btn {
+    font-size: 20px;
+  }
+
+  .carousel-caption {
+    top: 53%;
+    transform: translateY(-50%);
+  }
+
+}
+
+@media (max-width: 480px) { /* Mobile Phone Devices */
+  .btn {
+    font-size: 16px;
+    padding: 6px 14px;
+  }
+  .carousel-caption {
+    top: 46%;
+    transform: translateY(-50%);
+  }
+}
+
+@media (max-width: 600px) {
+  #icon {
+    max-width: 200px;
+    margin: 1% auto;
+  }
+
+  h4, {
+    font-size: 1.6em;
+  }
+}
+
+/* END MEDIA */

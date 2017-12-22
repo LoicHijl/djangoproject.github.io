@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DiningGlobally</title>
+  {% load staticfiles %}
+  <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}"/>
+  <link rel="stylesheet" type"text/css" href="{% static 'css/myStyle.css'%}"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<!-- This class should be positioned slightly higher only on this page -->
+<style>
+.carousel-caption {
+  top: 50%;
+  transform: translateY(-50%);
+  font-weight: bold;
+}
+@media (max-width: 480px) { /* Mobile Phone Devices */
+  .carousel-caption {
+    top: 45%;
+    transform: translateY(-50%);
+  }
+}
+</style>
+
+  <!--Start Navbar-->
+  <nav class="navbar navbar-inverse";>
+    <div class ="container-fluid">
+      <div class ="navbar-header">
+        <button type="button" class="navbar-toggle"  data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <!-- Images in the navbar below-->
+        <a class="navbar-brand" href="index.html"> <img src="{% static 'img/MrChef.png' %}" id="LeChef" ></a>
+        <a class="navbar-brand" href="index.html"> <img src="{% static 'img/DiningGlobally.png' %}" id="DiningGlobally" ></a>
+      </div>
+      <!-- Start drop down menu navbar -->
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Recipes.html">Recipes</a></li>
+          <li><a href="/admin">Admin Login</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="Help.html">Help</a></li>
+          <li><a href="China.html">Cuisines</a></li>
+        </ul>
+      </div>
+      <!-- End drop down menu navbar -->
+    </div>
+  </nav>
+  <!--End Navbar-->
+  <!-- Start carousel slide-->
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+        <img src="{% static 'img/AroundTheWorld.jpg' %}">
+        <div class="carousel-caption">
+          <h1>welcome to dining globally</h1>
+          <br>
+          <a class="btn btn-default" href="China.html">Explore Now!</a>
+        </div>
+        </div>
+    </div>
+  </div>
+  <!-- End carousel slide-->
+  <footer class="container-fluid text-center">
+    <div class="row">
+      <div class="col-sm-6">
+        <br>
+        <h3>Social Media</h3>
+
+        <br>
+        <a href="https://www.facebook.com" target="_blank" class="fa fa-facebook fa-2x"></a>
+        <a href="https://www.twitter.com" target="_blank" class="fa fa-twitter fa-2x"></a>
+        <a href="https://www.google.com" target="_blank" class="fa fa-google fa-2x"></a>
+        <a href="https://www.linkedin.com" target="_blank" class="fa fa-linkedin fa-2x"></a>
+        <a  href="https://www.youtube.com" target="_blank" class="fa fa-youtube fa-2x"></a>
+      </div>
+      <div class="col-sm-6">
+        <img src="{% static 'img/meal.png'%}">
+
+      </div>
+    </div>
+  </footer>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="{% static 'js/bootstrap.min.js' %}"></script>
+</body>
+</html>
