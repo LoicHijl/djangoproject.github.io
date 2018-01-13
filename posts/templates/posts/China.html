@@ -11,6 +11,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+  <!-- Link used to go back to the top -->
+  <div id="top"></div>
 
   <!--Start Navbar-->
   <nav class="navbar navbar-inverse";>
@@ -99,22 +101,29 @@
   </div>
   <!-- End Carousel Slide control panel-->
   <!-- End Carousel SLider -->
+  
   <!-- Start Body -->
   <div class="container text-center">
     <div class="page-header" id="anchor1">
       <h2>Welcome to China!</h2>
       <div class="row">
         <div class="col-sm-4">
-          <img src="{% static 'img/ChinaRestaurant.jpeg'%}" id="icon">
-          <h4>Quanjude Restaurant</h4>
+          <figure>
+            <img src="{% static 'img/ChinaRestaurant.jpeg'%}" id="icon">
+            <figcaption><a href="#QR" class="slide-section">Quanjude Restaurant</a></figcaption>
+          </figure>
         </div>
         <div class="col-sm-4">
-          <img src="{% static 'img/ChinaDuck.jpeg'%}" id="icon">
-          <h4>Roasted Duck</h4>
+          <figure>
+            <img src="{% static 'img/ChinaDuck.jpeg'%}" id="icon">
+            <figcaption><a href="#RD" class="slide-section">Roasted Duck</a></figcaption>
+          </figure>
         </div>
         <div class="col-sm-4">
-          <img src="{% static 'img/ChinaPork.jpeg'%}" id="icon">
-          <h4>Sweet & Sour Pork</h4>
+          <figure>
+            <img src="{% static 'img/ChinaPork.jpeg'%}" id="icon">
+            <figcaption><a href="#SSR" class="slide-section">Sweet & Sour Pork</a></figcaption>
+          </figure>
         </div>
       </div>
     </div>
@@ -122,7 +131,7 @@
   <div class="container">
     <div class="row" id="myRestaurant">
       <div class="col-md-6">
-        <h4>Quanjude Branch Restaurant</h4>
+        <h4 id="QR">Quanjude Branch Restaurant</h4>
         <p>Quanjude Roast Duck Restaurant was founded in 1864.
           It has a history of 149 years.
           As an old and famous roast duck restaurant, Quanjude
@@ -145,7 +154,7 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-          <h4>Peking Roasted Duck</h4>
+          <h4 id="RD">Peking Roasted Duck</h4>
           <p>First, make a small hole in the duck and remove
             the viscera. Next, put boiling water into the duck and tie up
             the hole. Then hang the duck in the oven. By doing this,
@@ -159,7 +168,7 @@
         <img src="{% static 'img/ChinaDuck.jpeg'%}" class="img-responsive">
       </div>
       <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-        <h4>Sweet & Sour Pork</h4>
+        <h4 id="SSR">Sweet & Sour Pork</h4>
         <p>Sweet and Sour Pork, the ubiquitous and arguably the
            most well-known Chinese recipe in the world, is a classic
            Cantonese dish. Called “咕嚕肉” or “goo lou yok” in Cantonese
@@ -190,6 +199,9 @@
       </div>
     </div>
   </div>
+  <div class="container">
+    <a href="#top" class="slide-section">Go back to the top!</a>
+  </div>
   <!-- End Body -->
   <br>
   <br>
@@ -217,5 +229,6 @@
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="{% static 'js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'js/myJs.js' %}"></script>
 </body>
 </html>
