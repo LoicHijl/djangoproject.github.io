@@ -17,6 +17,36 @@ h1, h2, h3, h4{
   text-align: center;
 }
 
+/* Animated caption */
+figure {
+  margin: 0;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+figcaption {
+  padding: 0.5em;
+  background-color: rgba(26,61,100,0.5);
+  color: #FFFFFF;
+  border-radius: 2em;
+  position: absolute;
+  left: 30%;
+  bottom: -5em;
+  transition: all 200ms ease-out;
+  transform: rotate(-30deg);
+}
+figcaption a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+figure:hover figcaption {
+  bottom: 10px;
+  transform: rotate(0deg);
+}
+/* End caption */
+
 /* END BODY */
 /* START NAVBAR */
 .navbar {
