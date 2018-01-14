@@ -40,113 +40,64 @@
 
   <!-- Start Body -->
   <div class="container text-center">
-    <div class="page-header">
-      <h2>Game</h2>
+    <h2>Welcome to the Game Page!</h2>
+    <div class="row">
+      <div class="col-sm-4 col-xs-12">
+        <div class="jumbotron">
+          <div class="container">
+            <div class="row">
+              <h4><a href="#hidden" data-toggle="collapse">Rules</a></h4>
+              <div id="hidden" class="collapse">
+                <p><strong>The Basics:</strong> The game is about guessing as many
+                dishes correctly as you can! A dish will pop up randomly
+                and you have to guess what dish it is!</p>
+                <p><strong>Lives:</strong> In this game, you only have <em>one</em>
+                  life so be careful with making wrong guesses! However, you
+                  <em>can</em> skip a dish if you are not sure about the answer!</p>
+                <p><strong>Score:</strong> For each correct answer you gain one
+                  point. Try to get as many points as you can!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="jumbotron">
+          <div class="container">
+            <h4>Current game:</h4>
+            <div class="row">
+              <div class="col-xs-6"><p>Score:<br><strong id="points">0</strong></p> </div>
+              <div class="col-xs-6"><p>Lives:<br><strong id="guess">1</strong></p> </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-8 col-xs-12">
+        <div class="jumbotron">
+          <h3>Guess The Flag</h3>
+          <img class="fs-img" id="headerFlag">
+          <div>
+            <button class="btn btn-default btn-block" id="A" onclick="isCorrect(this)">Text</button>
+            <button class="btn btn-default btn-block" id="B" onclick="isCorrect(this)">Text</button>
+            <button class="btn btn-default btn-block" id="C" onclick="isCorrect(this)">Text</button>
+            <button class="btn btn-default btn-block" id="D" onclick="isCorrect(this)">Text</button>
+          </div>
+          <br>
+          <button class="btn btn-default" onclick="randomize()">Next</button>
+        </div>
+      </div>
     </div>
   </div>
-  <div class="container">
-    <div class="row" id="myRestaurant">
-        <h4>Text about Game</h4>
-          <p>sample text sample text sample text sample text sample text
-             sample text sample text sample text sample text sample text
-             sample text sample text sample text sample text sample text
-             sample text sample text sample text sample text sample text
-             sample text sample text sample text sample text sample text
-             sample text sample text sample text sample text sample text
-             sample text sample text sample text sample text sample text
-             sample text sample text sample text sample text sample text
-             sample text sample text sample text sample text sample text
-             sample text sample text sample text sample text sample text
-             sample text sample text sample text sample text sample text</p>
-             <p>sample text sample text sample text sample text sample text
-                sample text sample text sample text sample text sample text
-                sample text sample text sample text sample text sample text
-                sample text sample text sample text sample text sample text
-                sample text sample text sample text sample text sample text
-                sample text sample text sample text sample text sample text
-                sample text sample text sample text sample text sample text
-                sample text sample text sample text sample text sample text
-                sample text sample text sample text sample text sample text
-                sample text sample text sample text sample text sample text
-                sample text sample text sample text sample text sample text</p>
-                <p>sample text sample text sample text sample text sample text
-                   sample text sample text sample text sample text sample text
-                   sample text sample text sample text sample text sample text
-                   sample text sample text sample text sample text sample text
-                   sample text sample text sample text sample text sample text
-                   sample text sample text sample text sample text sample text
-                   sample text sample text sample text sample text sample text
-                   sample text sample text sample text sample text sample text
-                   sample text sample text sample text sample text sample text
-                   sample text sample text sample text sample text sample text
-                   sample text sample text sample text sample text sample text</p>
-                   <p>sample text sample text sample text sample text sample text
-                      sample text sample text sample text sample text sample text
-                      sample text sample text sample text sample text sample text
-                      sample text sample text sample text sample text sample text
-                      sample text sample text sample text sample text sample text
-                      sample text sample text sample text sample text sample text
-                      sample text sample text sample text sample text sample text
-                      sample text sample text sample text sample text sample text
-                      sample text sample text sample text sample text sample text
-                      sample text sample text sample text sample text sample text
-                      sample text sample text sample text sample text sample text</p>
-                      <p>sample text sample text sample text sample text sample text
-                         sample text sample text sample text sample text sample text
-                         sample text sample text sample text sample text sample text
-                         sample text sample text sample text sample text sample text
-                         sample text sample text sample text sample text sample text
-                         sample text sample text sample text sample text sample text
-                         sample text sample text sample text sample text sample text
-                         sample text sample text sample text sample text sample text
-                         sample text sample text sample text sample text sample text
-                         sample text sample text sample text sample text sample text
-                         sample text sample text sample text sample text sample text</p>
-                         <p>sample text sample text sample text sample text sample text
-                            sample text sample text sample text sample text sample text
-                            sample text sample text sample text sample text sample text
-                            sample text sample text sample text sample text sample text
-                            sample text sample text sample text sample text sample text
-                            sample text sample text sample text sample text sample text
-                            sample text sample text sample text sample text sample text
-                            sample text sample text sample text sample text sample text
-                            sample text sample text sample text sample text sample text
-                            sample text sample text sample text sample text sample text
-                            sample text sample text sample text sample text sample text</p>
-                            <p>sample text sample text sample text sample text sample text
-                               sample text sample text sample text sample text sample text
-                               sample text sample text sample text sample text sample text
-                               sample text sample text sample text sample text sample text
-                               sample text sample text sample text sample text sample text
-                               sample text sample text sample text sample text sample text
-                               sample text sample text sample text sample text sample text
-                               sample text sample text sample text sample text sample text
-                               sample text sample text sample text sample text sample text
-                               sample text sample text sample text sample text sample text
-                               sample text sample text sample text sample text sample text</p>
-                               <p>sample text sample text sample text sample text sample text
-                                  sample text sample text sample text sample text sample text
-                                  sample text sample text sample text sample text sample text
-                                  sample text sample text sample text sample text sample text
-                                  sample text sample text sample text sample text sample text
-                                  sample text sample text sample text sample text sample text
-                                  sample text sample text sample text sample text sample text
-                                  sample text sample text sample text sample text sample text
-                                  sample text sample text sample text sample text sample text
-                                  sample text sample text sample text sample text sample text
-                                  sample text sample text sample text sample text sample text</p>
-                                  <p>sample text sample text sample text sample text sample text
-                                     sample text sample text sample text sample text sample text
-                                     sample text sample text sample text sample text sample text
-                                     sample text sample text sample text sample text sample text
-                                     sample text sample text sample text sample text sample text
-                                     sample text sample text sample text sample text sample text
-                                     sample text sample text sample text sample text sample text
-                                     sample text sample text sample text sample text sample text
-                                     sample text sample text sample text sample text sample text
-                                     sample text sample text sample text sample text sample text
-                                     sample text sample text sample text sample text sample text</p>
-    </div>
+
+  <!-- Invisible items needed for the game -->
+  <div class="invis">
+    <p id="correctAnswer"></p>
+    <p id="lock">false</p>
+    <p id="lives">1</p>
+    <p id="score">0</p>
+    <p id="test">0</p>
+    <p id="dish1">0</p>
+    <p id="dish2">0</p>
+    <p id="dish3">0</p>
+    <p id="dish4">0</p>
   </div>
   <br>
   <br>
