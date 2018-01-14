@@ -108,27 +108,21 @@
       <h2>Welcome to China!</h2>
       <div class="row">
         <div class="col-sm-4">
-          <figure>
-            <img src="{% static 'img/ChinaRestaurant.jpeg'%}" id="icon">
-            <figcaption><a href="#QR" class="slide-section">Quanjude Restaurant</a></figcaption>
-          </figure>
+          <img src="img/ChinaRestaurant.jpeg" class="icon" id="icon1" href="#QR">
+          <h4>Quanjude Restaurant</h4>
         </div>
         <div class="col-sm-4">
-          <figure>
-            <img src="{% static 'img/ChinaDuck.jpeg'%}" id="icon">
-            <figcaption><a href="#RD" class="slide-section">Roasted Duck</a></figcaption>
-          </figure>
+          <img src="img/ChinaDuck.jpeg" class="icon" id="icon2" href="#RD">
+          <h4>Roasted Peking Duck</h4>
         </div>
         <div class="col-sm-4">
-          <figure>
-            <img src="{% static 'img/ChinaPork.jpeg'%}" id="icon">
-            <figcaption><a href="#SSR" class="slide-section">Sweet & Sour Pork</a></figcaption>
-          </figure>
+          <img src="img/ChinaPork.jpeg" class="icon" id="icon3" href="#SSP">
+          <h4>Sweet & Sour Pork</h4>
         </div>
       </div>
     </div>
   </div>
-  <div class="container">
+  <div id="cont1" class="container">
     <div class="row" id="myRestaurant">
       <div class="col-md-6">
         <h4 id="QR">Quanjude Branch Restaurant</h4>
@@ -147,13 +141,14 @@
           the "whole duck banquet" of Quanjude as a state banquet.</p>
       </div>
       <div class="col-md-6">
-        <img src="{% static 'img/ChinaKitchen.jpeg'%}" class="img-responsive">
+        <img src="img/ChinaKitchen.jpeg" class="img-responsive">
       </div>
     </div>
   </div>
   <div class="container">
     <div class="row">
-      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+      <div id="cont2">
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
           <h4 id="RD">Peking Roasted Duck</h4>
           <p>First, make a small hole in the duck and remove
             the viscera. Next, put boiling water into the duck and tie up
@@ -163,24 +158,27 @@
             bulges and won’t go soft when cooked; instead, the skin becomes
             very thin and crispy. So, the most delicious part of the duck is
             the skin.</p>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+          <img src="img/ChinaDuck.jpeg" class="img-responsive">
+        </div>
       </div>
-      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-        <img src="{% static 'img/ChinaDuck.jpeg'%}" class="img-responsive">
-      </div>
-      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-        <h4 id="SSR">Sweet & Sour Pork</h4>
-        <p>Sweet and Sour Pork, the ubiquitous and arguably the
-           most well-known Chinese recipe in the world, is a classic
-           Cantonese dish. Called “咕嚕肉” or “goo lou yok” in Cantonese
-           dialect, sweet and sour pork is very pleasing to the palate
-           because of the flavorsome sweet and sour sauce—the sweetness
-           from sugar plus the tangy ketchup and sharp rice vinegar—with the
-           crispy fried pork pieces. (You can check out my sweet and sour
-           chicken recipe.) The green and red bell peppers and pineapple
-           pieces are just icing on the cake.</p>
-      </div>
-      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-          <img src="{% static 'img/ChinaPork.jpeg'%}" class="img-responsive">
+      <div id="cont3">
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+          <h4 id="SSP">Sweet & Sour Pork</h4>
+          <p>Sweet and Sour Pork, the ubiquitous and arguably the
+            most well-known Chinese recipe in the world, is a classic
+            Cantonese dish. Called “咕嚕肉” or “goo lou yok” in Cantonese
+            dialect, sweet and sour pork is very pleasing to the palate
+            because of the flavorsome sweet and sour sauce—the sweetness
+            from sugar plus the tangy ketchup and sharp rice vinegar—with the
+            crispy fried pork pieces. (You can check out my sweet and sour
+            chicken recipe.) The green and red bell peppers and pineapple
+            pieces are just icing on the cake.</p>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+          <img src="img/ChinaPork.jpeg" class="img-responsive">
+        </div>
       </div>
     </div>
     <div class="container">
