@@ -10,6 +10,36 @@ $(document).ready(function(){
     e.preventDefault();
   });
     
+    
+  /* Scroll Behaviour */
+  $("#icon1").click(function(e){
+    $("#cont1").show(500);
+
+    var linkHref =$(this).attr('href');
+
+    $('html, body').animate({
+      scrollTop: $(linkHref).offset().top
+    });
+  });
+  $("#icon2").click(function(e){
+    $("#cont2").show(500);
+
+    var linkHref =$(this).attr('href');
+
+    $('html, body').animate({
+      scrollTop: $(linkHref).offset().top
+    });
+  });
+  $("#icon3").click(function(e){
+    $("#cont3").show(500);
+
+    var linkHref =$(this).attr('href');
+
+    $('html, body').animate({
+      scrollTop: $(linkHref).offset().top
+    });
+  });
+    
     /* */
     $("[data-toggle=tooltip]").tooltip();
 });
