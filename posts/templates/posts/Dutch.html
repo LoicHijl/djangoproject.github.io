@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+  <div id="top"></div>
 
   <!--Start Navbar-->
   <nav class="navbar navbar-inverse";>
@@ -99,30 +100,31 @@
   </div>
   <!-- End Carousel Slide control panel-->
   <!-- End Carousel SLider -->
+  
   <!-- Start Body -->
   <div class="container text-center">
     <div class="page-header" id="anchor3">
       <h2>Welcome to the Netherlands!</h2>
       <div class="row">
         <div class="col-sm-4">
-          <img src="{% static 'img/DutchRestaurant.jpeg'%}" id="icon">
+          <img src="{% static 'img/DutchRestaurant.jpeg'%}" class="icon" id="icon1" href="#DR">
           <h4>Dutch Restaurant</h4>
         </div>
         <div class="col-sm-4">
-          <img src="{% static 'img/DutchStampot.jpg'%}" id="icon">
-          <h4>Dutch Dish 1</h4>
+          <img src="{% static 'img/DutchStampot.jpg'%}" class="icon" id="icon2" href="#Stamp">
+          <h4>Stamppot</h4>
         </div>
         <div class="col-sm-4">
-          <img src="{% static 'img/DutchBallen.jpg'%}" id="icon">
-          <h4>Dutch Dish 2</h4>
+          <img src="{% static 'img/DutchBallen.jpg'%}" class="icon" id="icon3" href="#BB">
+          <h4>Bitterballen</h4>
         </div>
       </div>
     </div>
   </div>
-  <div class="container">
+  <div id="cont1" class="container">
     <div class="row" id="myRestaurant">
       <div class="col-md-6">
-        <h4>Text about famous Dutch Restaurant</h4>
+        <h4 id="DR">Text about famous Dutch Restaurant</h4>
         <p>sample text sample text sample text sample text sample text
            sample text sample text sample text sample text sample text
            sample text sample text sample text sample text sample text
@@ -142,8 +144,9 @@
   </div>
   <div class="container">
     <div class="row">
-      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-        <h4>Text about Dutch Dish</h4>
+      <div id="cont2">
+       <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+        <h4 id="Stamp">Text about Dutch Dish</h4>
         <p>sample text sample text sample text sample text sample text
            sample text sample text sample text sample text sample text
            sample text sample text sample text sample text sample text
@@ -152,13 +155,15 @@
            sample text sample text sample text sample text sample text
            sample text sample text sample text sample text sample text
            sample text sample text sample text sample text sample text</p>
-      </div>
-      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-        <img src="{% static 'img/DutchStampot.jpg'%}" class="img-responsive">
+        </div>
+       <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+         <img src="{% static 'img/DutchStampot.jpg'%}" class="img-responsive">
+       </div>
       </div>
       <div class="clearfix visible-sm"></div>
+      <div id="cont3">
       <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-        <h4>Text about Dutch Dish</h4>
+        <h4 id="BB">Text about Dutch Dish</h4>
         <p>sample text sample text sample text sample text sample text
            sample text sample text sample text sample text sample text
            sample text sample text sample text sample text sample text
@@ -171,23 +176,33 @@
       <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
           <img src="{% static 'img/DutchBallen.jpg'%}" class="img-responsive">
       </div>
+      </div>
     </div>
     <div class="container">
       <div class="row" >
         <h4><a href="#hidden" data-toggle="collapse">Care to learn about Dutch culture? </a></h4>
         <div id="hidden" class="collapse">
           <h4>Text about Dutch culture</h4>
-          <p>sample text sample text sample text sample text sample text
-             sample text sample text sample text sample text sample text
-             sample text sample text sample text sample text sample text
-             sample text sample text sample text sample text sample text
-             sample text sample text sample text sample text sample text
-             sample text sample text sample text sample text sample text
-             sample text sample text sample text sample text sample text
-             sample text sample text sample text sample text sample text</p>
+          <p>Dutch cuisine is formed from the cooking traditions and practices
+          of the Netherlands. The country's cuisine is shaped by its location
+          in the fertile North Sea river delta, giving rise to fishing, farming
+          and trading over sea (colonialism and spice trade).<br>
+          Traditionally, Dutch cuisine is simple and straightforward, with many
+          vegetables and little meat: breakfast and lunch are typically bread
+          with toppings like cheese, while dinner is meat and potatoes, supplemented
+          with seasonal vegetables. The diet contains many dairy products.
+          Without many refinements, it is best described as rustic, though many
+          holidays are celebrated with special foods.<br>
+          During the twentieth century, Dutch cuisine and diet changed. Influenced
+          by the eating culture of its colonies (particularly the Dutch East Indies), 
+          it became more cosmopolitan and most international cuisines are
+          represented in the major cities. </p>
         </div>
       </div>
     </div>
+  </div>
+  <div class="container">
+    <a href="#top" class="slide-section">Go back to the top!</a>
   </div>
   <!-- End Body -->
   <br>
@@ -216,5 +231,6 @@
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="{% static 'js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'js/myJs.js' %}"></script>
 </body>
 </html>
