@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+  <div id="top"></div>
 
   <!--Start Navbar-->
   <nav class="navbar navbar-inverse";>
@@ -99,30 +100,31 @@
   </div>
   <!-- End Carousel Slide control panel-->
   <!-- End Carousel SLider -->
+  
   <!-- Start Body -->
   <div class="container text-center">
     <div class="page-header" id="anchor2">
       <h2>Welcome to Thailand!</h2>
       <div class="row">
         <div class="col-sm-4">
-          <img src="{% static 'img/ThaiRoll.jpeg'%}" id="icon">
-          <h4>Oyster Pancakes</h4>
-        </div>
-        <div class="col-sm-4">
-          <img src="{% static 'img/ThaiRestaurant.jpeg'%}" id="icon">
+          <img src="{% static 'img/ThaiRestaurant.jpeg'%}" class="icon" id="icon1" href="#ISC">
           <h4>Issaya Siamese Club</h4>
         </div>
         <div class="col-sm-4">
-          <img src="{% static 'img/ThaiPancake.jpeg'%}" id="icon">
-          <h4>Sweet & Sour Pork</h4>
+          <img src="{% static 'img/ThaiRoll.jpeg'%}" class="icon" id="icon2" href="#OP">
+          <h4>Oyster Pancakes</h4>
+        </div>
+        <div class="col-sm-4">
+          <img src="{% static 'img/ThaiPancake.jpeg'%}" class="icon" id="icon3" href="#TP">
+          <h4>Thai Pancakes</h4>
         </div>
       </div>
     </div>
   </div>
-  <div class="container">
+  <div id="cont1" class="container">
     <div class="row" id="myRestaurant">
       <div class="col-md-6">
-        <h4>Issaya Siamese Club</h4>
+        <h4 id="ISC">Issaya Siamese Club</h4>
         <p>Standind proudly in the middle of a luscious green garden
            this 100-years-old house with its wooden verandah and old
            fashioned staircase instantly sets a romantic mood, making
@@ -144,8 +146,9 @@
   </div>
   <div class="container">
     <div class="row">
+      <div id="cont2">
       <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-        <h4>Oyster Pancakes</h4>
+        <h4 id="OP">Oyster Pancakes</h4>
         <p>When it comes down to the nuts and bolts of it,
            oya jians are fundamentally omelets.
            The concept is simple: fried eggs with sautéed veggies and
@@ -159,9 +162,11 @@
       <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
         <img src="{% static 'img/ThaiPancake.jpeg'%}" class="img-responsive">
       </div>
+      </div>
       <div class="clearfix visible-sm"></div>
+      <div id="cont3">
       <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-        <h4>Thai Beef Roll</h4>
+        <h4 id="TP">Thai Beef Roll</h4>
         <p>Cannot go wrong with these. The roll is comprised of a
            crispy green onion pancake wrapped around braised beef
            slices with a handful of pickled greens and cilantro.
@@ -173,6 +178,7 @@
       </div>
       <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
           <img src="{% static 'img/ThaiRoll.jpeg'%}" class="img-responsive">
+      </div>
       </div>
     </div>
     <div class="container">
@@ -190,6 +196,9 @@
         </div>
       </div>
     </div>
+  </div>
+  <div class="container">
+    <a href="#top" class="slide-section">Go back to the top!</a>
   </div>
   <!-- End Body -->
   <br>
