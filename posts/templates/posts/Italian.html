@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+  <div id="top"></div>
 
   <!--Start Navbar-->
   <nav class="navbar navbar-inverse";>
@@ -99,30 +100,31 @@
   </div>
   <!-- End Carousel Slide control panel-->
   <!-- End Carousel SLider -->
+  
   <!-- Start Body -->
   <div class="container text-center">
     <div class="page-header" id="anchor5">
       <h2>Welcome to the Italy!</h2>
       <div class="row">
         <div class="col-sm-4">
-          <img src="{% static 'img/ItalyRestaurant.jpeg'%}" id="icon">
+          <img src="{% static 'img/ItalyRestaurant.jpeg'%}" class="icon" id="icon1" href="#IR">
           <h4>Italian Restaurant</h4>
         </div>
         <div class="col-sm-4">
-          <img src="{% static 'img/ItalyPasta.jpeg'%}" id="icon">
+          <img src="{% static 'img/ItalyPasta.jpeg'%}" class="icon" id="icon1" href="#Pasta">
           <h4>Italian Dish 1</h4>
         </div>
         <div class="col-sm-4">
-          <img src="{% static 'img/ItalyPizza.jpeg'%}" id="icon">
+          <img src="{% static 'img/ItalyPizza.jpeg'%}" class="icon" id="icon1" href="#Pizza">
           <h4>Italian Dish 2</h4>
         </div>
       </div>
     </div>
   </div>
-  <div class="container">
+  <div id="cont1" class="container">
     <div class="row" id="myRestaurant">
       <div class="col-md-6">
-        <h4>Text about famous Italian Restaurant</h4>
+        <h4 id="IR">Text about famous Italian Restaurant</h4>
         <p>sample text sample text sample text sample text sample text
            sample text sample text sample text sample text sample text
            sample text sample text sample text sample text sample text
@@ -142,8 +144,9 @@
   </div>
   <div class="container">
     <div class="row">
+      <div id="cont2">
       <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-        <h4>Pizza</h4>
+        <h4 id="Pizza">Pizza</h4>
         <p>Pizza is a traditional Italian dish consisting of yeasted
           flatbread typically topped with tomato sauce and cheese and
           baked in an oven. It can also be topped with additional
@@ -159,9 +162,11 @@
       <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
         <img src="{% static 'img/ItalyPasta.jpeg'%}" class="img-responsive">
       </div>
+      </div>
       <div class="clearfix visible-sm"></div>
+      <div id="cont3">
       <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-        <h4>Pasta</h4>
+        <h4 id="Pasta">Pasta</h4>
         <p>sample text sample text sample text sample text sample text
            sample text sample text sample text sample text sample text
            sample text sample text sample text sample text sample text
@@ -173,6 +178,7 @@
       </div>
       <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
           <img src="{% static 'img/ItalyPizza.jpeg'%}" class="img-responsive">
+      </div>
       </div>
     </div>
     <div class="container">
@@ -191,6 +197,9 @@
         </div>
       </div>
     </div>
+  </div>
+  <div class="container">
+    <a href="#top" class="slide-section">Go back to the top!</a>
   </div>
   <!-- End Body -->
   <br>
@@ -219,5 +228,6 @@
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="{% static 'js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'js/myJs.js' %}"></script>
 </body>
 </html>
