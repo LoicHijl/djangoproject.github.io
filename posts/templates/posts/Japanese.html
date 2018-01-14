@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+  <div id="top"></div>
 
   <!--Start Navbar-->
   <nav class="navbar navbar-inverse";>
@@ -99,30 +100,31 @@
   </div>
   <!-- End Carousel Slide control panel-->
   <!-- End Carousel SLider -->
+  
   <!-- Start Body -->
   <div class="container text-center">
     <div class="page-header" id="anchor4">
       <h2>Welcome to Japan!</h2>
       <div class="row">
         <div class="col-sm-4">
-          <img src="{% static 'img/JapanRamen.png'%}" id="icon">
+          <img src="{% static 'img/JapanRestaurant.jpeg'%}" class="icon" id="icon1" href="#JR">
           <h4>Japanese Dish 1</h4>
         </div>
         <div class="col-sm-4">
-          <img src="{% static 'img/JapanRestaurant.jpeg'%}" id="icon">
+          <img src="{% static 'img/JapanRamen.png'%}" class="icon" id="icon2" href="#Ramen">
           <h4>Japanese Restaurant</h4>
         </div>
         <div class="col-sm-4">
-          <img src="{% static 'img/JapanSushi.jpeg'%}" id="icon">
+          <img src="{% static 'img/JapanSushi.jpeg'%}" class="icon" id="icon3" href="#Sushi">
           <h4>Japanese Dish 2</h4>
         </div>
       </div>
     </div>
   </div>
-  <div class="container">
+  <div id="cont1" class="container">
     <div class="row" id="myRestaurant">
       <div class="col-md-6">
-        <h4>Text about famous Japanese Restaurant</h4>
+        <h4 id="JR">Text about famous Japanese Restaurant</h4>
         <p>sample text sample text sample text sample text sample text
            sample text sample text sample text sample text sample text
            sample text sample text sample text sample text sample text
@@ -142,8 +144,9 @@
   </div>
   <div class="container">
     <div class="row">
+      <div id="cont2">
       <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-        <h4>Text about Japanese Dish</h4>
+        <h4 id="Ramen">Text about Japanese Dish</h4>
         <p>sample text sample text sample text sample text sample text
            sample text sample text sample text sample text sample text
            sample text sample text sample text sample text sample text
@@ -156,9 +159,11 @@
       <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
         <img src="{% static 'img/JapanRamen.png'%}" class="img-responsive">
       </div>
+      </div>
       <div class="clearfix visible-sm"></div>
+      <div id="cont3">
       <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-        <h4>Text about Japanese Dish</h4>
+        <h4 id="Sushi">Text about Japanese Dish</h4>
         <p>sample text sample text sample text sample text sample text
            sample text sample text sample text sample text sample text
            sample text sample text sample text sample text sample text
@@ -170,6 +175,7 @@
       </div>
       <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
           <img src="{% static 'img/JapanSushi.jpeg'%}" class="img-responsive">
+      </div>
       </div>
     </div>
     <div class="container">
@@ -188,6 +194,9 @@
         </div>
       </div>
     </div>
+  </div>
+  <div class="container">
+    <a href="#top" class="slide-section">Go back to the top!</a>
   </div>
   <!-- End Body -->
   <br>
@@ -216,5 +225,6 @@
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="{% static 'js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'js/myJs.js' %}"></script>
 </body>
 </html>
