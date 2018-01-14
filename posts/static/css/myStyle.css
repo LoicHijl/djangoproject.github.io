@@ -144,6 +144,12 @@ a:link .fa, a:visited .fa   {
 .icon {
   max-width: 200px;
   margin: 1% auto;
+  opacity: 1;
+  filter: alpha(opacity=100); /* For IE8 and earlier */
+}
+.icon:hover {
+  opacity: 0.5;
+  filter: alpha(opacity=50); /* For IE8 and earlier */
 }
 
 #cont1, #cont2, #cont3 {
