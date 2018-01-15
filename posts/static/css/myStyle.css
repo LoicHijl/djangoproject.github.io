@@ -149,6 +149,7 @@ a:link .fa, a:visited .fa   {
 }
 .icon:hover {
   opacity: 0.5;
+  cursor: pointer;
   filter: alpha(opacity=50); /* For IE8 and earlier */
 }
 
